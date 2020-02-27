@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "lib": [ "dom", "es6", "es2018.promise" ],
+    "target": "es6",
+    "allowJs": true,
+    "experimentalDecorators": true,
+    "skipLibCheck": true
+  },
+  "exclude": [
+    "node_modules",
+    "library",
+    "local",
+    "temp",
+    "build",
+    "settings"
+  ]
+}
