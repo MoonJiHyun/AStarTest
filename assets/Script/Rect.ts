@@ -127,9 +127,9 @@ export default class Rect extends cc.Component {
         this.node.on("touchstart", this.handleTouch);
     }
 
-    // protected unuse() {
-    //     this.init(0, 0, 0);
-    // }
+    protected unuse() {
+        this.init(0, 0, 0);
+    }
 
     private init(i: number, j: number, num: number) {
         this.rectInfo = {
@@ -145,6 +145,9 @@ export default class Rect extends cc.Component {
             value: i + j * num,
         };
         this.node.color = this.rectColor.normal;
+        this.fLabel.string = "";
+        this.gLabel.string = "";
+        this.hLabel.string = "";
     }
 
     private isInt(value) {
